@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.0">
+<project version="21.1">
     <meta>
         <filters directoryPatterns="" filePatterns="\QKlee.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="21.0" xml:space="preserve">
+            <serialized version="21.1" xml:space="preserve">
                 <serializableOrderedMap>
+                    <entry>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>C:\Users\gusta\Briefe\framework</String>
+                        </String-array>
+                    </entry>
                     <entry>
                         <String>author.show.caret.proximity.highlight</String>
                         <Boolean>false</Boolean>
@@ -79,6 +85,10 @@
                     </entry>
                     <entry>
                         <String>key.author.caret.navigation.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>

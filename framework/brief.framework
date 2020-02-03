@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="21.0" xml:space="preserve">
+<serialized version="21.1" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -606,12 +606,66 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>URL</String>
-																<String>${framework}/register.xml</String>
+																<String>${framework}/register_place.xml</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>org.bbaw.telota.ediarum.OpenFileOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>AddRegisterEntry</String>
+										</field>
+										<field name="name">
+											<String>New Register Entry (Search GND)</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>cmdLine</String>
+																<String>C:/Users/gusta/Anaconda3/python.exe  C:/Users/gusta/Briefe/framework/python/get_place_name.py</String>
+															</entry>
+															<entry>
+																<String>showConsole</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>workingDirectory</String>
+																<String>.</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteCommandLineOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -678,17 +732,7 @@ lb-n</String>
 										<toolbarEntry-array>
 											<toolbarItem>
 												<field name="actionID">
-													<String>placename</String>
-												</field>
-											</toolbarItem>
-											<toolbarItem>
-												<field name="actionID">
-													<String>open-register</String>
-												</field>
-											</toolbarItem>
-											<toolbarItem>
-												<field name="actionID">
-													<String>placename</String>
+													<String>AddRegisterEntry</String>
 												</field>
 											</toolbarItem>
 											<toolbar>
@@ -898,9 +942,6 @@ lb-n</String>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${currentFileURL}</File>
-								</field>
 								<field name="outputResource">
 									<String>${currentFileURL}</String>
 								</field>
@@ -983,9 +1024,6 @@ lb-n</String>
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${currentFileURL}</File>
 								</field>
 								<field name="outputResource">
 									<String>${currentFileURL}</String>
