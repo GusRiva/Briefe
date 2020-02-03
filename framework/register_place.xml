@@ -1,16 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ul>
-    <li id="o322432112">
-        <span>Aare (Fluß, Schweiz)</span>
-    </li>
-    <li id="o3242343">
-        <span>Aargau (Schweiz)</span>
-    </li>
-    <li id="o3245345">
-        <span>Abbach (s. Regensburg, Bayern)</span>
-    </li>
-    <li id="gnd:2523"><span>Berlin</span></li>
-    <li id="gnd:2563"><span>Frankfurt am Main</span></li>
-    <li id="gnd:2563"><span>Heidelberg</span></li>
-</ul>
+<listPlace>
+    <place>
+        <idno>4005728-8</idno>
+        <placeName>Berlin</placeName>
+    </place>
+</listPlace>
 

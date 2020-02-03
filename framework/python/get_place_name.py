@@ -8,6 +8,14 @@ import tkinter as tk
 #     text = json.dumps(obj, sort_keys=True, indent=4)
 #     print(text)
 
+selectedName = ""
+selectedGND = ""
+
+def StoreChoice():
+    selectedName = v.get().split('§')[0]
+    selectedGND = v.get().split('§')[1]
+    print((selectedGND))
+
 
 
 def sucheGND(searchTerm, v):
@@ -31,14 +39,15 @@ def sucheGND(searchTerm, v):
                        text= tup[0],
                        # padx=20,
                        variable=v,
-                       # command=ShowChoice,
-                       value=tup[1]).grid(row=1 + val, column=1, sticky=tk.W)
+                       command= StoreChoice,
+                       value= tup[0] + "§" + tup[1]).grid(row=1 + val, column=1, sticky=tk.W)
 
-    v.set(searchResult[0][1])
+    v.set(searchResult[0][0] +"§" + searchResult[0][1])
+    buttonAdd.config(state="normal")
 
 
 master = tk.Tk()
-v = tk.IntVar()
+v = tk.StringVar()
 master.geometry("600x600") #Width x Height
 tk.Label(master,
      text="Suche nach: ").grid(row=0,
@@ -47,6 +56,10 @@ tk.Label(master,
 
 def get(event):
     sucheGND(event.widget.get(), v)
+
+def addEntry():
+    print(selectedName, selectedGND)
+    # master.quit()
 
 e1 = tk.Entry(master, width=50)
 e1.bind('<Return>', get )
@@ -63,9 +76,11 @@ tk.Button(master, text='Search'
           ).grid(row=0, column=4,
                  padx=10,
                  sticky=tk.W)
-tk.Button(master, text='Add'
-          # ,command= lambda: sucheGND(e1.get())
-          , state= 'disabled').grid(row=0, column=5, padx=10, sticky=tk.W)
+
+buttonAdd = tk.Button(master, text='Add',
+          command= addEntry,
+          state= 'disabled')
+buttonAdd.grid(row=0, column=5, padx=10, sticky=tk.W)
 
 radioFrame = tk.Frame(master)
 radioFrame.grid(row=1, column=2, sticky=tk.W)

@@ -436,76 +436,6 @@ lb-n</String>
 									</action>
 									<action>
 										<field name="id">
-											<String>Place</String>
-										</field>
-										<field name="name">
-											<String>Place (Register)</String>
-										</field>
-										<field name="description">
-											<String>Inserts placeName with Register</String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String></String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>URL</String>
-																<String>${framework}/register.xml</String>
-															</entry>
-															<entry>
-																<String>element</String>
-																<String>&lt;placeName xmlns='http://www.tei-c.org/ns/1.0' key='$ITEMS' /></String>
-															</entry>
-															<entry>
-																<String>item rendering</String>
-																<String> $XPATH{/span}</String>
-															</entry>
-															<entry>
-																<String>item separator</String>
-																<String>; </String>
-															</entry>
-															<entry>
-																<String>item variable</String>
-																<String>$XPATH{@id}</String>
-															</entry>
-															<entry>
-																<String>namespaces</String>
-																<String>tei:http://www.tei-c.org/ns/1.0</String>
-															</entry>
-															<entry>
-																<String>node</String>
-																<String>//li</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
-									<action>
-										<field name="id">
 											<String>placename</String>
 										</field>
 										<field name="name">
@@ -544,7 +474,7 @@ lb-n</String>
 															</entry>
 															<entry>
 																<String>item rendering</String>
-																<String>$XPATH{/span}</String>
+																<String>$XPATH{/placeName}</String>
 															</entry>
 															<entry>
 																<String>item separator</String>
@@ -552,7 +482,7 @@ lb-n</String>
 															</entry>
 															<entry>
 																<String>item variable</String>
-																<String>$XPATH{@id}</String>
+																<String>$XPATH{/idno}</String>
 															</entry>
 															<entry>
 																<String>namespaces</String>
@@ -560,7 +490,7 @@ lb-n</String>
 															</entry>
 															<entry>
 																<String>node</String>
-																<String>//li</String>
+																<String>//place</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -753,11 +683,6 @@ lb-n</String>
 														<toolbarItem>
 															<field name="actionID">
 																<String>placename</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>Place</String>
 															</field>
 														</toolbarItem>
 														<toolbarItem>
