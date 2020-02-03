@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+                <editor><persName>Kirsten Wallenwein</persName></editor>
+                <sponsor>SFB</sponsor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>UB Heidelberg</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>X</settlement>
+                        <repository>X</repository>
+                        <idno>X</idno>
+                        <altIdentifier ana="#ChLA">
+                            <idno></idno>
+                        </altIdentifier>
+                        <altIdentifier ana="#Brune">
+                            <idno></idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="parch">
+                                <extent>1
+                                    <dimensions scope="all" type="leaf" unit="cm">
+                                        <height></height>
+                                        <width></width>
+                                    </dimensions> </extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1"></layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <p></p>
+                        </handDesc>
+                        <scriptDesc>
+                            <scriptNote scriptRef="#vocabulary"/>
+                        </scriptDesc>
+                    </physDesc>
+                    <history>
+                        <origin> 
+                            <date notBefore="0001" notAfter="1000"/> 
+                            <placeName ref="gnd:00000"></placeName> </origin>
+                        <provenance/>
+                        <acquisition/>
+                    </history>
+                </msDesc>
+                <listObject>
+                    <object xml:id="reliquie_xxx">
+                        <objectIdentifier>
+                            <idno/>
+                        </objectIdentifier>
+                    </object>
+                </listObject>
+                <listRelation>
+                    <relation active="#reliquie_xxx" name="rdf:type" passive="relau:reliquie"/>
+                    <relation active="#authentikText_xxx" name="ecrm:P70_documents" passive="#reliquie_xxx"/>
+                    <relation active="#reliquie_xxx" name="P45_consists_of" passive="material"/>
+                </listRelation>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Projekt Beschreibung</p>
+            </projectDesc>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+                <prefixDef ident="gnd" matchPattern="(.+)" replacementPattern="http://d-nb.info/gnd/$1"/>
+                <prefixDef ident="ecrm" matchPattern="(.+)" replacementPattern="http://erlangen-crm.org/170309/$1"/>
+                <prefixDef ident="relau" matchPattern="(.+)" replacementPattern="http://lod.ub.uni-heidelberg.de/ontologies/relau/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Keyword 1</term>
+                    <term>Keyword 2</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change n="1" who="#Pers"/>
+        </revisionDesc>
+    </teiHeader>
+    <text ana="hc:CompleteExpression" xml:id="authentikText_21">
+        <group>
+            <text ana="hc:CompleteExpression">
+                <body>
+                    <div>
+                        <pb/>
+                        <cb/>
+                        <ab></ab>
+                    </div>
+                </body>
+            </text>
+            <text ana="hc:CompleteExpression">
+                <body>
+                    <div>
+                        <ab>Übersetzung</ab>
+                    </div>
+                </body>
+            </text>
+        </group>
+    </text>
+</TEI>

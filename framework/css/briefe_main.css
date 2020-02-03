@@ -1,0 +1,293 @@
+@namespace oxy url('http://www.oxygenxml.com/extensions/author');
+
+@font-face {
+  font-family: "Junicode";
+  src: url("font/Junicode.ttf") format("ttf");
+}
+
+
+oxy|document{
+    background-position:top;
+}
+
+oxy|comment{
+    display:none !important;
+}
+
+
+* {
+    display: block;
+     -oxy-display-tags: none;
+    font-size:1.0em;
+}
+
+TEI {
+    content: "          " oxy_textfield(
+            edit, "@xml:id",
+            fontInherit, true,
+            columns, 30);
+    padding:10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family:Verdana, Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+    line-height:120%;
+    margin: 4px;
+    border-top: solid 10px #d8d8ff;
+/*    background-color: #fff1f1;*/
+}
+
+titleStmt {
+/*     padding: 2em;*/
+     -oxy-editable: false;
+    background-color: #f1f1ff;
+/*    border-bottom: solid 2px #d8d8ff;*/
+/*    border-top: solid 2px #d8d8ff;*/
+/*    border-left: solid 2px #d8d8ff;*/
+    padding-top: 8px;
+}
+
+title {
+    display: inline;
+}
+
+titleStmt title {
+    content:
+        oxy_textArea(
+            edit, "#text",
+            fontInherit, true,
+            columns, 50,
+            rows, 3);
+      visibility: -oxy-collapse-text;
+      white-space: pre-wrap;
+      font-size: medium;
+      -oxy-editable: true;
+      display: block;
+    padding-left: 65px;
+    margin: 5px;
+}
+
+
+publicationStmt, editor, editor persName, sponsor {
+    display: none;
+}
+
+msIdentifier {
+    background-color: #fff1f1;
+    -oxy-editable: false;
+    content: oxy_label(text, "Manuscript Identification", styles, "font-size: large");
+    
+    padding-top: 10px;
+    padding-left: 5px;
+    
+/*    border-bottom: solid 2px #ffd8d8;*/
+/*    border-left: solid 2px #ffd8d8;*/
+    font-size: medium;
+}
+
+settlement {
+    margin-top: 5px;
+    content:
+    oxy_label(text, "Settlement: ", width, 10em, text-align, left)
+    oxy_textfield(
+            edit, "#text",
+            fontInherit, true,
+            columns, 30);
+      visibility: -oxy-collapse-text;
+      -oxy-editable: true;
+}
+
+repository {
+    content: 
+    oxy_label(text, "Repository: ", width, 10em, text-align, left)
+    oxy_textfield(
+            edit, "#text",
+            fontInherit, true,
+            columns, 30);
+      visibility: -oxy-collapse-text;
+      -oxy-editable: true;
+}
+
+msIdentifier idno {
+    content: 
+        oxy_label(text, "Number: ", width, 10em, text-align, left) 
+        oxy_textfield(
+            edit, "#text",
+            fontInherit, true,
+            columns, 30);
+      visibility: -oxy-collapse-text;
+      -oxy-editable: true;
+}
+
+listRelation {
+    display: none;
+}
+
+projectDesc{
+    display: none;
+}
+
+listPrefixDef {
+    display: none;
+}
+
+revisionDesc {
+    content:  oxy_label(text, "List of changes to file ",  styles, "font-size: medium");
+}
+
+change {
+  content: attr(who) ": " attr(when) " " attr(n)
+}
+
+graphic {
+    content: attr(url, url);
+}
+
+facsimile {
+    display: none;
+}
+
+
+/*TEXT DISPLAY*/
+
+
+text {
+    font-family: "Serif";
+    font-size: large;
+    content: 
+     oxy_label(text, " Type of text: ", width, 10em, text-align, left, styles, "/*background-color: #f1f1ff;*/") 
+     oxy_checkbox(
+            edit, "@ana",
+            values, "hc:CompleteExpression, hc:Letter",
+            labels, "Complete Expression, Letter"
+            fontInherit, true,
+            columns, 60);
+      -oxy-editable: true;
+/*      border-left: solid 2px #d8d8ff;*/
+/*      background-color: #FFFFFF;*/
+      
+}
+
+body {
+content: 
+     oxy_label(text, "\A Text ", width, 10em, text-align, left,  styles, "font-size: x-large") "\A";
+/*    background-color: #FFFFFF;*/
+
+    padding-left: 10px;
+    border-left: solid 15px #FFFFFF;
+    display: inline;
+}
+
+
+p {
+    display: inline;
+    padding: 8px;
+}
+
+
+
+placeName {
+    display: inline;
+}
+
+
+pb {
+    -oxy-append-content: attr(n);
+    font-size: large;
+    display: inline-block;
+    margin-left: 130px;
+}
+
+cb {
+    -oxy-append-content:  attr(n);
+    font-size: large;
+    display: inline-block;
+}
+
+cb[n~="b"]{
+    -oxy-prepend-content: oxy_xpath("preceding::pb[1]/@n");
+    margin-left: 130px;
+}
+
+cb[n~="c"]{
+    -oxy-prepend-content: oxy_xpath("preceding::pb[1]/@n");
+    margin-left: 130px;
+}
+
+ref {
+    display: inline;
+}
+
+note {
+    display: inline;
+    -oxy-prepend-content: "*";
+     visibility: -oxy-collapse-text;
+}
+
+note:hover {
+    visibility: visible;
+    background-color: #d2ecf6;
+}
+
+note:focus {
+    visibility: visible;
+    background-color: #d2ecf6;
+}
+
+opener {
+     display: inline;
+          padding: 8px;
+}
+
+
+dateline {
+    display: inline;
+}
+
+docDate {
+    display: inline;
+}
+
+salute {
+    display: inline;
+}
+
+closer {
+    display: inline;
+     padding: 8px;
+}
+
+
+signed {
+    display: inline;
+}
+
+ab, w, sic, pc, choice, orig, lb, hi, persName, rs{
+    display: inline;
+    -oxy-display-tags: none;
+}
+
+
+lb {
+ content: attr(n)" - ";
+ font-size: x-small;    
+}
+
+lb:before {
+  content: "\A";
+  white-space: pre;
+}
+
+del {
+    display: inline;
+    text-decoration: line-through;
+    text-decoration-style: double;
+    -oxy-display-tags: none;
+}
+
+
+
+w {
+    -oxy-prepend-content: " ";
+    display: inline;
+}

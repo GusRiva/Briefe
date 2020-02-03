@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="klee_korr_040727_FK_Paris">
+   <!--# teiHeader wird später ersetzt bzw. ergänzt-->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Felix Klee, Paris, 4. Juli 1927, an Lily Klee, Oberstdorf, ein Blatt Briefpapier »HOTEL DU BON Pasteur, recto einspaltig, zweispaltig beschrieben</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher> <orgName instant="false" full="yes">Universitätsbibliothek Heidelberg</orgName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/2002498-8</idno> <ref target="https://www.ub.uni-heidelberg.de">https://www.ub.uni-heidelberg.de</ref> <address>
+               <street>Plöck 107–109</street>
+               <postCode>69117</postCode>
+               <settlement> <placeName instant="false" full="yes">Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </settlement>
+               <country> <placeName instant="false" full="yes">Deutschland</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4011882-4</idno> </country>
+               </address> </publisher>
+            <pubPlace> <placeName instant="false" full="yes">Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </pubPlace>
+            <date when="2019-10-15" instant="false">15.10.2019</date>
+            <availability default="false">
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <msDesc status="draft">
+               <msIdentifier>
+                  <settlement>Hinterkappelen</settlement>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ana="hc:Page" xml:id="klee_korr_040727_FK_Paris_1" n="1">
+         <graphic url="https://digi.ub.uni-heidelberg.de/klee_korr_040727_FK_Paris_0001"/>
+         <zone ana="hc:Column" xml:id="klee_korr_040727_FK_Paris_1-a" n="a" rotate="0"/>
+      </surface>
+      <surface ana="hc:Page" xml:id="klee_korr_040727_FK_Paris_2" n="2">
+         <graphic url="https://digi.ub.uni-heidelberg.de/klee_korr_040727_FK_Paris_0002"/>
+         <zone ana="hc:Column" xml:id="klee_korr_040727_FK_Paris_2-a" n="a" rotate="0"/>
+         <zone ana="hc:Column" xml:id="klee_korr_040727_FK_Paris_2-b" n="b" rotate="0"/>
+      </surface>
+   </facsimile>
+   <text ana="hc:CompleteExpression hc:Letter">
+      <body>
+         <div part="N" org="uniform" sample="complete">
+            <pb facs="#klee_korr_040727_FK_Paris_1" n="1"/>
+            <cb facs="#klee_korr_040727_FK_Paris_1-a" n="a"/>
+            <opener>
+<lb n="1"/><dateline><docDate when="1927-07-04">4. Juli 1927</docDate> </dateline>
+<lb n="2"/><salute>Liebe Mutter!</salute></opener>
+            <p part="N">
+<lb n="3"/>Vielen herzlichen Dank für 
+<lb n="4"/>Deine Karte aus Oberstdorf. 
+<lb n="5"/>Ich freue mich so sehr für 
+<lb n="6"/>Dich, dass Du gut <del rendition="hc:Strikethrough" instant="false" status="unremarkable">gut</del> <w part="N">Auf
+<lb n="7"/>gehoben</w> bist. Morgen ist der 
+<lb n="8"/>letzte Tag in <placeName rendition="place:gnd- 4044660-8" instant="false" full="yes">Paris</placeName>. Ich kann 
+<lb n="9"/>mich schwer trennen von Dieser 
+<lb n="10"/>unheimlich schönen Stadt. Gestern 
+<lb n="11"/>hörte ich zum 1. Mal <ref ana="hc:ExternalLink" target="https://de.wikipedia.org/wiki/Mignon_(Oper)">Mignon</ref>. 
+<lb n="12"/>eine ziemliche sentimentale 
+<lb n="13"/>Pucciennes<note ana="hc:Comment" anchored="true">In der Art von Puccini. Es ist bei Puristen üblich Puccini kitschig zu finden.</note> Kitschoper mit einigen 
+<lb n="14"/>Netten Momenten. Faust war 
+<lb n="15"/>sehr schön, Romeo und Julia 
+<lb n="16"/>ist dank seines frischen Librettos 
+<lb n="17"/>eine sehr schöne Oper. Aber 
+<lb n="18"/>Gounods ist bedeutend stärker 
+<lb n="19"/>in Margarete. 2x sah ich altes <pb facs="#klee_korr_040727_FK_Paris_2" n="2"/> <cb facs="#klee_korr_040727_FK_Paris_2-a" n="a"/> 
+<lb n="20"/>Pariser Ballet, das war sehr lustig 
+<lb n="21"/>und wie herrlich beifallfreudig sind 
+<lb n="22"/>die Franzosen. Alles schöne hört man 
+<lb n="23"/>doppelt. Die Blumenarie <hi rendition="hc:Underlined">3</hi> x in 
+<lb n="24"/>Carmen. Das Toreadorlied <hi rendition="hc:Underlined">2</hi> x Das 
+<lb n="25"/>Terzett 2x etc. und der viele sonstige 
+<lb n="26"/>Beifall. Sonst in den vielen Museen, 
+<lb n="27"/>wo man immer neue herrliche Sachen 
+<lb n="28"/>entdeckt so: petit palais, Luxenburg 
+<lb n="29"/>Invalides, <ref target="http://www.guimet.fr/fr/">Guimet</ref>, Trocadero etc. 
+<lb n="30"/>Jetzt ist grosser Rummel wegen 
+<lb n="31"/><persName rendition="pers:gnd-118665707" instant="false" full="yes">Byrd</persName> dem Flieger. – In Marseille 
+<lb n="32"/>bin ich ganz kurz, fahre sehr – 
+<lb n="33"/>wahrscheinlich gleich weiter auf der 
+<lb n="34"/>Suche nach einem netten Ort. 
+<lb n="35"/>(gegen Toulon.) Vor allem billig 
+<lb n="36"/>Das ist die Hauptsache denn 
+<lb n="37"/>Paris verschlingt immerhin ziemlich 
+<lb n="38"/>Viel. An der Rivièra bleibe ich bis 
+<lb n="39"/>cirka 1. August. Bei Bergers 
+<lb n="40"/>war ich noch öfters. Sie haben 
+<lb n="41"/>mich in rührendster Weise 
+<lb n="42"/>versorgt. Mitte Juli fahren sie 
+<lb n="43"/>auch nach der Schweiz heim. 
+<lb n="44"/>Die Saison ist mitte Juli hier beendet. <cb facs="#klee_korr_040727_FK_Paris_2-b" n="b"/> 
+<lb n="45"/>unheimlich viel Engländer und 
+<lb n="46"/>Americaner tun sich hier gut 
+<lb n="47"/>man hört kaum mehr franz. 
+<lb n="48"/>Sprechen, alles english spoken – 
+<lb n="49"/>zu dem Konzert von Casals 
+<lb n="50"/>gab es nur Karten von 100 frs 
+<lb n="51"/>Aufwärts und das war trop chère 
+<lb n="52"/>Ich freue mich ja sehr auf den 
+<lb n="53"/>Süden und seine „Wunder“. 
+<lb n="54"/>Für heute Schluss! Die letzte 
+<lb n="55"/>Nachricht aus Paris.</p>
+            <closer><salute>Sei 
+<lb n="56"/>innig umarmt</salute> 
+<lb n="57"/><signed><persName rendition="pers:gnd-119450429" instant="false" full="yes">Felix</persName></signed>.</closer>
+         </div>
+      </body>
+      <back/>
+   </text>
+</TEI>

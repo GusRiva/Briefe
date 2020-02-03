@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="klee_korr_FK_270619_Frankfurt">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Felix Klee, ohne Ort [Frankfurt], ohne Datum [Poststempel: 19. Juni 1927], an Lily und Paul Klee, Dessau, Postkarte, beidseitig beschrieben</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher> <orgName instant="false" full="yes">Universitätsbibliothek Heidelberg</orgName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/2002498-8</idno> <ref target="https://www.ub.uni-heidelberg.de">https://www.ub.uni-heidelberg.de</ref> <address>
+                    <street>Plöck 107–109</street>
+                    <postCode>69117</postCode>
+                    <settlement> <placeName instant="false" full="yes">Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </settlement>
+                    <country> <placeName instant="false" full="yes">Deutschland</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4011882-4</idno> </country>
+                    </address> </publisher>
+                <pubPlace> <placeName instant="false" full="yes">Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </pubPlace>
+                <date when="2019-10-15" instant="false">15.10.2019</date>
+                <availability default="false">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc default="false">
+                <msDesc status="draft">
+                    <msIdentifier>
+                        <settlement>Hinterkappelen</settlement>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <surface ana="hc:Page" xml:id="klee_korr_FK_270619_Frankfurt_1" n="1">
+            <graphic url="https://digi.ub.uni-heidelberg.de/diglit/klee_korr_FK_270619_Frankfurt/0001"/>
+            <zone ana="hc:Column" xml:id="klee_korr_FK_270619_Frankfurt_1-a" n="a" rotate="0"/>
+        </surface>
+        <surface ana="hc:Page" xml:id="klee_korr_FK_270619_Frankfurt_2" n="2">
+            <graphic url="https://digi.ub.uni-heidelberg.de/diglit/klee_korr_FK_270619_Frankfurt/0002"/>
+            <zone ana="hc:Column" xml:id="klee_korr_FK_270619_Frankfurt_2-a" n="a" rotate="0"/>
+            <zone ana="hc:TextZone" xml:id="klee_korr_FK_270619_Frankfurt_2-Postmark" n="Postmark" rotate="0"/>
+            <zone ana="hc:TextZone" xml:id="klee_korr_FK_270619_Frankfurt_2-Address" n="Address" rotate="0"/>
+        </surface>
+    </facsimile>
+    <text ana="hc:CompleteExpression hc:Letter">
+        <body> <pb n="1"/> <cb n="a"/> <opener> <salute>
+            <lb n="1"/>Liebe <rs ref="pers:gnd-133496805 pers:gnd-118562827">Eltern</rs>!</salute> </opener> <p part="N">
+            <lb n="2"/>Die Musikausstellung in <placeName ref="#gnd:2563 ">Frankfurt</placeName><note ana="hc:Comment" anchored="true">Internationale Ausstellung in Frankfurt am Main 1927, vgl. Bericht in <ref target="https://digi.ub.uni-heidelberg.de/diglit/neue_frankfurt1926_1927/0184">„Das neue Frankfurt: internationale Monatsschrift für die Probleme kultureller Neugestaltung, 1.1926/​1927“</ref></note> ist wirklich 
+            <lb n="3"/>sehenswert. Eine solche Fülle von Darbietungen 
+            <lb n="4"/>Das schönste ist die Zauberflötenpartitur original. 
+            <lb n="5"/>Jedes Land hat seine Abteilung und Stärken 
+            <lb n="6"/>Herrliche <placeName key="gnd:2563">Südseeplatten</placeName> Man kann das alles 
+            <lb n="7"/>kaum beschreiben, so schön ist das. 
+            <lb n="8"/>All die alten und modernsten Komponisten. 
+            <lb n="9"/>Dann alles Völkerkundliche, Ich finde das 
+            <lb n="10"/>alles viel stärker und ausgesprochener als 
+            <lb n="11"/>die Magdeburger Ausstellung. <pb n="2"/> <cb n="a" facs="#klee_korr_FK_270619_Frankfurt_2-a"/>
+            <lb n="12"/>Am Dienstag fahre ich 
+            <lb n="13"/>nach Strassburg. 
+            <lb n="14"/>Morgen höre ich 
+            <lb n="15"/>in Wiesbaden <title ref="music:gnd-300122330">Manon 
+            <lb n="16"/>Lescaut</title>. Vielleicht 
+            <lb n="17"/>heute die Götterdämmerung 
+            <lb n="18"/>hier.</p>
+            <lb n="19"/> <closer><salute>Herzlichst Euch Beiden</salute>
+            <lb n="20"/><signed>Felix</signed>.</closer> <milestone ana="hc:ZoneBeginning" n="Postmark" facs="#klee_korr_FK_270619_Frankfurt_2-Postmark"/>
+            <lb n="21"/>Frankfurt <date instant="false">19. Juni 1927</date> <milestone ana="hc:ZoneBeginning" n="Address" facs="#klee_korr_FK_270619_Frankfurt_2-Address"/>
+            <lb n="22"/>An <address>
+            <addrLine>Lily und Paul Klee</addrLine>
+            <addrLine>
+                <lb n="23"/>Hauptstraße 1A</addrLine>
+            <addrLine>
+                <lb n="24"/>Dessau</addrLine>
+            </address> </body>
+    </text>
+</TEI>

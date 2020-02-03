@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="21.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="\QKlee.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="21.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>author.show.caret.proximity.highlight</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.font</String>
+                        <String>Times New Roman,0,24</String>
+                    </entry>
+                    <entry>
+                        <String>editor.format.break.line.elements</String>
+                        <breakLineElement-array>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>lb</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                        </breakLineElement-array>
+                    </entry>
+                    <entry>
+                        <String>editor.format.break.long.attributes</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.format.indent.inline.elements</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.format.preserve.empty.lines</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.format.preserve.not.normalize.attribute.values</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.format.preserve.text.as.it.is</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.textantialising</String>
+                        <textAntialiasPO>
+                            <field name="jvmVersions">
+                                <String-array>
+                                    <String>11</String>
+                                </String-array>
+                            </field>
+                            <field name="aaValues">
+                                <String-array>
+                                    <String>ON</String>
+                                </String-array>
+                            </field>
+                        </textAntialiasPO>
+                    </entry>
+                    <entry>
+                        <String>font.for.author.v12</String>
+                        <String>Arial,0,20</String>
+                    </entry>
+                    <entry>
+                        <String>font.for.gui</String>
+                        <String>Tahoma,0,20</String>
+                    </entry>
+                    <entry>
+                        <String>font.for.schema</String>
+                        <String>Arial,0,20</String>
+                    </entry>
+                    <entry>
+                        <String>font.for.text</String>
+                        <String>Tahoma,0,20</String>
+                    </entry>
+                    <entry>
+                        <String>key.author.caret.navigation.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.format.xml.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.fonts.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>ui.view.titles.font</String>
+                        <String>Tahoma,0,20</String>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="Klee.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>

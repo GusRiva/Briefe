@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="klee_korr_FK_290221_Coburg">
+    
+    <!--# teiHeader wird später ersetzt bzw. ergänzt-->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Felix Klee, Coburg, 21. Februar 1929, an Lily Klee, Dessau, ein Blatt Briefpapier, beidseitig beschrieben</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>Universitätsbibliothek Heidelberg</orgName>
+                    <idno ana="hc:GND-URI">http://d-nb.info/gnd/2002498-8</idno>
+                    <ref target="https://www.ub.uni-heidelberg.de">https://www.ub.uni-heidelberg.de</ref>
+                    <address>
+                        <street>Plöck 107–109</street>
+                        <postCode>69117</postCode>
+                        <settlement>
+                            <placeName>Heidelberg</placeName>
+                            <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno>
+                        </settlement>
+                        <country>
+                            <placeName>Deutschland</placeName>
+                            <idno ana="hc:GND-URI">http://d-nb.info/gnd/4011882-4</idno>
+                        </country>
+                    </address>
+                </publisher>
+                <pubPlace>
+                    <placeName>Heidelberg</placeName>
+                    <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno>
+                </pubPlace>
+                <date when="2019-10-15">15.10.2019</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Hinterkappelen</settlement>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <facsimile>
+        <surface ana="hc:Page" xml:id="klee_korr_FK_290221_Coburg_1" n="1">
+            <graphic url="https://digi.ub.uni-heidelberg.de/diglit/klee_korr_FK_290221_Coburg/0001"/>
+            <zone ana="hc:Column" xml:id="klee_korr_FK_290221_Coburg_1-a" n="a"></zone>
+        </surface>
+        <surface ana="hc:Page" xml:id="klee_korr_FK_290221_Coburg_2" n="2">
+            <graphic url="https://digi.ub.uni-heidelberg.de/diglit/klee_korr_FK_290221_Coburg/0002"/>
+            <zone ana="hc:Column" xml:id="klee_korr_FK_290221_Coburg_2-a" n="a"></zone>
+        </surface>
+    </facsimile>
+    
+    <text ana="hc:CompleteExpression hc:Letter">
+        <body>
+                <pb facs="#klee_korr_FK_290221_Coburg_1" n="1"/>
+                <cb facs="#klee_korr_FK_290221_Coburg_1-a" n="a"/>
+                <opener>
+                    <lb n="1" rendition="hc:FlushRight"/><dateline><placeName ref="place:gnd-4010325-0">Coburg</placeName> den <docDate when="1929-02-21"
+                        >21. Februar 1929</docDate></dateline>
+                    <lb n="2"/><salute>Liebe <rs ref="pers:gnd-133496805">Mutter</rs>!</salute>
+                </opener>
+                <p><lb n="3"/>Vielen schönen Dank für das Geld, den Brief und
+                    <lb n="4"/>das Sockenpaket, es kam allerdings in zerfetztem
+                    <lb n="5"/>Zustande an, Mit Zettel: Amtlich verschlossen
+                    <lb n="6"/>aber verloren ging nichts, laut Inhaltsangabe.
+                    <lb n="7"/>Für Februar habe ich bis jetzt ausgelegt 1 Paar Stiefel
+                    <lb n="8"/>Sohlen <hi rendition="hc:Underlined">6 M</hi> und das Waschepaket 2 M, kommt
+                    <lb n="9"/>noch die Heizung für Februar dazu, c. 10 M. Im März
+                    <lb n="10"/>will ich mir dann noch einen Trainingsanzug kaufen
+                    <lb n="11"/>und ein Paar leichte Schuhe. Ich habe <choice><abbr>z.Z.</abbr><expan>zur Zeit</expan></choice> einen
+                    <lb n="12"/>Monumentalschnupfen, der aber Gott seidank im Abflauen
+                    <lb n="13"/>begriffen ist, geistig und sonst geht’s mir sehr gut, zu
+                    <lb n="14"/>tun habe ich momentan enorm viel, Die Einstudierung
+                    <lb n="15"/>von <name rendition="title:gnd-300157185">Salome</name> ist sehr lehrreich und interessant, König
+                    <lb n="16"/>für 1 Tag erscheint dagegen als harmloser Waisenknabe
+                    <lb n="17"/>In Salome habe ich auch viel hinter der Scene, und so werde ich
+                    <lb n="18"/>wohl wenig frei sein im März, es wird aber schon reichen
+                    <lb n="19"/>zu einem kleinen Urlaub, Die Kälte der letzten Woche
+                    <lb n="20"/>war wahnsinnig, es flaut ab, aber gestern hatten wir
+                    <lb n="21"/>wiederum –17˚ in der Nacht, so darf man also noch
+                    <lb n="22"/>nicht recht trauen. Ich bleibe vorderhand im Wohnzimmer 
+                  <pb facs="#klee_korr_FK_290221_Coburg_2" n="2"/>
+                  <cb facs="#klee_korr_FK_290221_Coburg_2-a" n="a"/>
+                    <lb n="23"/>es schläft sich sehr gut auf dem Sofa, und die Wärme ist
+                    <lb n="24"/>fast ungewohnt, ich habe die 1. Nachte schlecht geschlafen
+                    <lb n="25"/>In der Zeitung las ich von einet Theaterfusion <placeName ref="place:gnd-4036934-1">Magdeburg</placeName>
+                    <lb n="26"/>Dessau, das ist ja finster für Euch! Was sagt denn
+                    <lb n="27"/><persName ref="pers:gnd-116640960">Rother</persName><note ana="hc:Comment">Arthur Rother, Generalmusikdirektor in Dessau</note> u.s.w. dazu? – Hier im Schauspiel gab es das
+                    <lb n="28"/>Kriminalstück: Herr Lamberthier von Verneuil und <name ref="title:gnd-	
+                        7841391-6"><w>Hokus<lb n="29" break="no"/>pokus</w></name> von <persName ref="pers:gnd-118540297">Kurt Götz</persName> ein reizendes pikantes feines Lustspiel
+                    <lb n="30"/>wo wir in einer Gerichtsscene im Publikum mitspielen. –
+                    <lb n="31"/>Sonst gibt es wenig Neues, wir alle warten auf die
+                    <lb n="32"/>Wärme, und sonst gibt es von früh bis nacht zu tun
+                    <lb n="33"/>so dass man dann mit Recht etwas ausruhen kann.
+                    </p>
+                <closer>
+                    <lb n="34"/><salute>Für heute will ich schliessen, lassts Euch alle gut gehen,
+                        <lb n="35"/>und grüsse <rs ref="pers:gnd-118562827">Vater</rs> innig und herzlich, und Du liebe <rs ref="pers:gnd-133496805">Mutter</rs>
+                        <lb n="36"/>sei innig umarmt
+                        <lb n="37"/>von</salute> <signed>Deinem <persName ref="pers:gnd-119450429">Felix</persName>.</signed>
+                </closer>
+                <postscript> <!--keine eigene zone angelegt, wenn das postsript direkt dem Haupttext folgt. -->
+                    <p><lb n="38"/>Hier ist ein Kammersänger Wolf<note ana="hc:Comment">Horst Wolf (1894-1980)</note>, der auch anscheinend
+                        <lb n="39"/>Dein Studiengenosse war (in München) er war mit
+                        <lb n="40"/>naterl und Many zusammen in München. Er war ein
+                        <lb n="41"/>lyrischer Tenor, und singt gastweise jetzt den Herodes<note ana="hc:Comment">Herodes ist eine Partie in „<name ref="title:gnd-300157185">Salome</name>“. (keine lyrische Partie, eher dramatisch. Gilt als
+                            schwer).</note>.</p>
+                </postscript>
+        </body>
+    </text>
+</TEI>

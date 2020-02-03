@@ -1,0 +1,20 @@
+opener {
+     content: oxy_label(text, "\A Opener: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
+}
+
+opener:after {
+    content: "| opener";
+    font-size: x-small;
+    color: #5C5C8E;
+}
+
+closer {
+     content: oxy_label(text, "\A Closer: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
+}
+
+closer:after {
+    content: "| closer";
+    font-size: x-small;
+    color: #5C5C8E;
+}
+
