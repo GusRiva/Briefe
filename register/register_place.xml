@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <listPlace>
     <place>
         <idno>4005728-8</idno>
         <placeName>Berlin</placeName>
     </place>
-</listPlace>
+    <place><placeName>Heidelberg</placeName><idno>4023996-2</idno></place><place><placeName>Landkreis Frankfurt</placeName><idno>502290-3</idno></place>
+<place><placeName>Madrid</placeName><idno>4036862-2</idno></place></listPlace>

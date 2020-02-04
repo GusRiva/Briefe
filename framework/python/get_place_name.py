@@ -1,22 +1,8 @@
 import requests
-import json
 import tkinter as tk
+import xml.etree.ElementTree as ET
 
-
-# def jprint(obj):
-#     # create a formatted string of the Python JSON object
-#     text = json.dumps(obj, sort_keys=True, indent=4)
-#     print(text)
-
-selectedName = ""
-selectedGND = ""
-
-def StoreChoice():
-    selectedName = v.get().split('§')[0]
-    selectedGND = v.get().split('§')[1]
-    print((selectedGND))
-
-
+registerFile = './../../register/register_place.xml'
 
 def sucheGND(searchTerm, v):
     oldRadios = radioFrame.winfo_children()
@@ -33,18 +19,44 @@ def sucheGND(searchTerm, v):
 
     print(searchResult)
 
-
     for val, tup in enumerate(searchResult):
         tk.Radiobutton(radioFrame,
                        text= tup[0],
                        # padx=20,
                        variable=v,
-                       command= StoreChoice,
+                       # command= StoreChoice,
                        value= tup[0] + "§" + tup[1]).grid(row=1 + val, column=1, sticky=tk.W)
 
     v.set(searchResult[0][0] +"§" + searchResult[0][1])
     buttonAdd.config(state="normal")
 
+def updateRegister(selName, selGND, register):
+    tree = ET.parse(register)
+    root = tree.getroot()
+    newPlace = ET.Element('place')
+    newPlaceName = ET.SubElement(newPlace, 'placeName').text = selName
+    newIdno = ET.SubElement(newPlace, 'idno').text = selGND
+    root.append(newPlace)
+
+    #To sort the entries
+    data = []
+    for elem in root:
+        key = elem.findtext('placeName')
+        data.append((key, elem))
+    data.sort()
+    # insert the last item from each tuple
+    root[:] = [item[-1] for item in data]
+
+    tree.write(registerFile)
+
+def get(event):
+    sucheGND(event.widget.get(), v)
+
+def addEntry():
+    selectedName = v.get().split('§')[0]
+    selectedGND = v.get().split('§')[1]
+    updateRegister(selectedName,selectedGND, registerFile)
+    master.quit()
 
 master = tk.Tk()
 v = tk.StringVar()
@@ -53,13 +65,6 @@ tk.Label(master,
      text="Suche nach: ").grid(row=0,
                                padx=20,
                                pady=20)
-
-def get(event):
-    sucheGND(event.widget.get(), v)
-
-def addEntry():
-    print(selectedName, selectedGND)
-    # master.quit()
 
 e1 = tk.Entry(master, width=50)
 e1.bind('<Return>', get )
