@@ -16,7 +16,7 @@ oxy|comment{
 
 
 * {
-    display: block;
+/*    display: block;*/
      -oxy-display-tags: none;
     font-size:1.0em;
 }
@@ -155,13 +155,13 @@ text {
     font-family: "Serif";
     font-size: large;
     content: 
-     oxy_label(text, " Type of text: ", width, 10em, text-align, left, styles, "/*background-color: #f1f1ff;*/") 
+     oxy_label(text, " Type of text: ", width, 10em, text-align, left, styles, "/*background-color: #f1f1ff;*/") "\A"
      oxy_checkbox(
             edit, "@ana",
-            values, "hc:CompleteExpression, hc:Letter",
-            labels, "Complete Expression, Letter"
+            values, "hc:CompleteExpression, hc:Letter, hc:Postcard, hc:PicturedPostcard, hc:LetterCard,hc:Telegram,hc:Poem, hc:Appendix,hc:Envelope",
+            labels, "Volltext, Brieftext, Postkarte, Ansichtskarte, Kartenbrief,Telegramm,Gedicht, Anhänge, Briefumschlag"
             fontInherit, true,
-            columns, 60);
+            columns, 60) ;
       -oxy-editable: true;
 /*      border-left: solid 2px #d8d8ff;*/
 /*      background-color: #FFFFFF;*/

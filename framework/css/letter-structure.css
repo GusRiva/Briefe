@@ -1,5 +1,5 @@
 opener {
-     content: oxy_label(text, "\A Opener: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
+     content: oxy_label(text, "Opener: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
 }
 
 opener:after {
@@ -9,7 +9,7 @@ opener:after {
 }
 
 closer {
-     content: oxy_label(text, "\A Closer: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
+     content: oxy_label(text, "Closer: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #5C5C8E") ;
 }
 
 closer:after {
@@ -18,3 +18,22 @@ closer:after {
     color: #5C5C8E;
 }
 
+postscript {
+     content: oxy_label(text, "Postscript: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #6E7416") ;
+}
+
+postscript:after {
+    content: "| postscript";
+    font-size: x-small;
+    color: #6E7416;
+}
+
+milestone {
+     content: oxy_label(text, "Milestone: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #632808") ;
+}
+
+milestone:after {
+    content: "| milestone";
+    font-size: x-small;
+    color: #632808;
+}

@@ -58,11 +58,13 @@
                             <field name="jvmVersions">
                                 <String-array>
                                     <String>11</String>
+                                    <String>1.8</String>
                                 </String-array>
                             </field>
                             <field name="aaValues">
                                 <String-array>
                                     <String>ON</String>
+                                    <String>DEFAULT</String>
                                 </String-array>
                             </field>
                         </textAntialiasPO>
@@ -88,6 +90,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.custom.editor.variables.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.custom.locations.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -102,6 +108,33 @@
                     <entry>
                         <String>ui.view.titles.font</String>
                         <String>Tahoma,0,20</String>
+                    </entry>
+                    <entry>
+                        <String>user.defined.editor.variables</String>
+                        <userEditorVariable-array>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${registersu}</String>
+                                </field>
+                                <field name="value">
+                                    <String>${pdu}/register/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>Folder with the register files as URL</String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${registers}</String>
+                                </field>
+                                <field name="value">
+                                    <String>${pd}/register/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>Folder with the register files as Path</String>
+                                </field>
+                            </userEditorVariable>
+                        </userEditorVariable-array>
                     </entry>
                 </serializableOrderedMap>
             </serialized>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="klee_korr_FK_270619_Frankfurt">
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="klee_korr_FK_270619_Frankfurt">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -39,16 +40,16 @@
             <zone ana="hc:TextZone" xml:id="klee_korr_FK_270619_Frankfurt_2-Address" n="Address" rotate="0"/>
         </surface>
     </facsimile>
-    <text ana="hc:CompleteExpression hc:Letter">
+    <text ana="hc:CompleteExpression hc:LetterCard">
         <body> <pb n="1"/> <cb n="a"/> <opener> <salute>
             <lb n="1"/>Liebe <rs ref="pers:gnd-133496805 pers:gnd-118562827">Eltern</rs>!</salute> </opener> <p part="N">
-            <lb n="2"/>Die Musikausstellung in <placeName ref="#gnd:2563 ">Frankfurt</placeName><note ana="hc:Comment" anchored="true">Internationale Ausstellung in Frankfurt am Main 1927, vgl. Bericht in <ref target="https://digi.ub.uni-heidelberg.de/diglit/neue_frankfurt1926_1927/0184">„Das neue Frankfurt: internationale Monatsschrift für die Probleme kultureller Neugestaltung, 1.1926/​1927“</ref></note> ist wirklich 
+            <lb n="2"/>Die Musikausstellung in <placeName ref="#gnd:2563 ">Frankfurt</placeName><note ana="hc:Comment" anchored="true">Internationale Ausstellung in Frankfurt am Main 1927, vgl. Bericht in <ref target="https://digi.ub.uni-heidelberg.de/diglit/neue_frankfurt1926_1927/0184">„<title>Das neue Frankfurt: internationale Monatsschrift für die Probleme kultureller Neugestaltung, 1.1926/​1927</title>“</ref></note> ist wirklich 
             <lb n="3"/>sehenswert. Eine solche Fülle von Darbietungen 
-            <lb n="4"/>Das schönste ist die Zauberflötenpartitur original. 
+            <lb n="4"/>Das schönste ist die <title>Zauberflötenpartitur</title> original. 
             <lb n="5"/>Jedes Land hat seine Abteilung und Stärken 
             <lb n="6"/>Herrliche <placeName key="gnd:2563">Südseeplatten</placeName> Man kann das alles 
             <lb n="7"/>kaum beschreiben, so schön ist das. 
-            <lb n="8"/>All die alten und modernsten Komponisten. 
+            <lb n="8"/>All die alten und modernsten <term>Komponisten</term>. 
             <lb n="9"/>Dann alles Völkerkundliche, Ich finde das 
             <lb n="10"/>alles viel stärker und ausgesprochener als 
             <lb n="11"/>die Magdeburger Ausstellung. <pb n="2"/> <cb n="a" facs="#klee_korr_FK_270619_Frankfurt_2-a"/>
