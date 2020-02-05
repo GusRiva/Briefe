@@ -1,8 +1,10 @@
 import requests
 import tkinter as tk
 import xml.etree.ElementTree as ET
+import os 
 
-registerFile = './../../register/register_place.xml'
+dir_path = os.path.dirname(os.path.realpath(__file__))
+registerFile = dir_path + '/../../register/register_place.xml'
 
 def sucheGND(searchTerm, v):
     oldRadios = radioFrame.winfo_children()
@@ -60,7 +62,7 @@ def addEntry():
 
 master = tk.Tk()
 v = tk.StringVar()
-master.geometry("600x600") #Width x Height
+master.geometry("900x500") #Width x Height
 tk.Label(master,
      text="Suche nach: ").grid(row=0,
                                padx=20,

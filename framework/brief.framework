@@ -503,11 +503,11 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>C:/Users/gusta/Anaconda3/python.exe  ${frameworkDir}/python/get_place_name.py</String>
+																<String>${frameworkDir}/python/venv/bin/python3  ${frameworkDir}/python/get_place_name.py</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
-																<String>true</String>
+																<String>false</String>
 															</entry>
 															<entry>
 																<String>workingDirectory</String>

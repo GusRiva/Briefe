@@ -8,12 +8,16 @@
                     <entry>
                         <String>additional.frameworks.directories</String>
                         <String-array>
-                            <String>C:\Users\gusta\Briefe\framework</String>
+                            <String>${pd}/framework</String>
                         </String-array>
                     </entry>
                     <entry>
                         <String>author.show.caret.proximity.highlight</String>
                         <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
                     </entry>
                     <entry>
                         <String>editor.font</String>
@@ -75,7 +79,7 @@
                     </entry>
                     <entry>
                         <String>font.for.gui</String>
-                        <String>Tahoma,0,20</String>
+                        <String>Lucida Sans,0,20</String>
                     </entry>
                     <entry>
                         <String>font.for.schema</String>
@@ -83,7 +87,7 @@
                     </entry>
                     <entry>
                         <String>font.for.text</String>
-                        <String>Tahoma,0,20</String>
+                        <String>Lucida Sans,0,20</String>
                     </entry>
                     <entry>
                         <String>key.author.caret.navigation.option.pane</String>
@@ -91,6 +95,10 @@
                     </entry>
                     <entry>
                         <String>key.custom.editor.variables.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
@@ -107,7 +115,7 @@
                     </entry>
                     <entry>
                         <String>ui.view.titles.font</String>
-                        <String>Tahoma,0,20</String>
+                        <String>Lucida Sans,0,20</String>
                     </entry>
                     <entry>
                         <String>user.defined.editor.variables</String>
