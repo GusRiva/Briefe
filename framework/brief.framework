@@ -503,7 +503,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>${frameworkDir}/python/venv/bin/python3  ${frameworkDir}/python/get_place_name.py</String>
+																<String>${frameworkDir}/python/dist/get_place_name</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
