@@ -479,7 +479,7 @@ lb-n</String>
 											<String>New Register Entry (Search GND)</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>Add an entry in the register from the GND API</String>
 										</field>
 										<field name="largeIconPath">
 											<String></String>
@@ -503,7 +503,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>${frameworkDir}/python/dist/get_place_name</String>
+																<String>${frameworkDir}/python/get_place_name.exe</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>

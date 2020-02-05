@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['get_place_name.py'],
-             pathex=['Z:\\home\\gustavo\\Dokumente\\git_projects\\Briefe\\framework\\python'],
+             pathex=['C:\\Users\\gusta\\Briefe\\framework\\python'],
              binaries=[],
              datas=[],
              hiddenimports=[],
