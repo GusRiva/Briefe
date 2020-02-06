@@ -503,7 +503,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>${frameworkDir}/python/get_place_name.exe</String>
+																<String>python /Users/df241/Seafile/Meine Bibliothek/Briefe/framework/python/python get_place_name.py</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
