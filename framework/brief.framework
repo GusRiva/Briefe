@@ -473,10 +473,10 @@ lb-n</String>
 									</action>
 									<action>
 										<field name="id">
-											<String>AddRegisterEntry</String>
+											<String>reg-ort-exe</String>
 										</field>
 										<field name="name">
-											<String>New Register Entry (Search GND)</String>
+											<String>Activate exe</String>
 										</field>
 										<field name="description">
 											<String></String>
@@ -503,7 +503,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>python /Users/df241/Seafile/Meine Bibliothek/Briefe/framework/python/python get_place_name.py</String>
+																<String>"${frameworkDir}/python/get_place_name.exe"</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
@@ -985,6 +985,153 @@ lb-n</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>NewRegPlace</String>
+										</field>
+										<field name="name">
+											<String>Register - Ort hinzufügen</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>actionIDs</String>
+																<String>reg-ort-exe
+reg-ort-python</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteMultipleActionsOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>reg-ort-python</String>
+										</field>
+										<field name="name">
+											<String>Activate python</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>cmdLine</String>
+																<String>python "${frameworkDir}/python/get_place_name.py"</String>
+															</entry>
+															<entry>
+																<String>showConsole</String>
+																<String>false</String>
+															</entry>
+															<entry>
+																<String>workingDirectory</String>
+																<String>.</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteCommandLineOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>note</String>
+										</field>
+										<field name="name">
+											<String>note</String>
+										</field>
+										<field name="description">
+											<String>Adds note</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;note ana="${ask( 'Art:', combobox,( 'hc:Comment':'Kommentar'; 'hc:Footnote':'Fußnoten'; 'hc:Gloss':'Glosse'; 'hc:TextCriticalNote':'textkritische Anmerkung'; 'hc:TranscriptionNote':'Anmerkung zur Transkription' ) )}">&lt;/note></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -1041,6 +1188,16 @@ lb-n</String>
 									</field>
 									<field name="toolbarEntriesDescriptorList">
 										<toolbarEntry-array>
+											<toolbarItem>
+												<field name="actionID">
+													<String>reg-ort-exe</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>reg-ort-python</String>
+												</field>
+											</toolbarItem>
 											<toolbar>
 												<field name="id">
 													<String>Register-Tags</String>
@@ -1063,7 +1220,7 @@ lb-n</String>
 														</toolbarItem>
 														<toolbarItem>
 															<field name="actionID">
-																<String>AddRegisterEntry</String>
+																<String>NewRegPlace</String>
 															</field>
 														</toolbarItem>
 													</toolbarEntry-array>
@@ -1120,6 +1277,11 @@ lb-n</String>
 														<toolbarItem>
 															<field name="actionID">
 																<String>p</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>note</String>
 															</field>
 														</toolbarItem>
 														<toolbarSeparator/>
