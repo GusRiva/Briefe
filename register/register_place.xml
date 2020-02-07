@@ -1,7 +1,7 @@
 <listPlace>
     <place>
-        <idno>4005728-8</idno>
         <placeName>Berlin</placeName>
+        <idno>4005728-8</idno>
     </place>
     <place>
         <placeName>Buenos Aires</placeName>
@@ -38,5 +38,9 @@
     <place>
         <placeName>Uruguay</placeName>
         <idno>4062186-8</idno>
+    </place>
+    <place>
+        <placeName>Mannheim</placeName>
+        <idno>4051236-2</idno>
     </place>
 </listPlace>

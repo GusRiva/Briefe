@@ -1,0 +1,21 @@
+* {
+/*    display: block;*/
+     -oxy-display-tags: none;
+    font-size:1.0em;
+}
+
+place {
+    display: block;
+}
+
+placeName {
+    display: inline;
+}
+
+idno {
+    display: inline;
+}
+
+idno:before {
+    content: "  -   "
+}

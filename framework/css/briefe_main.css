@@ -1,9 +1,9 @@
 @namespace oxy url('http://www.oxygenxml.com/extensions/author');
 
-@font-face {
+/*@font-face {
   font-family: "Junicode";
   src: url("font/Junicode.ttf") format("ttf");
-}
+}*/
 
 
 oxy|document{
@@ -73,16 +73,18 @@ publicationStmt, editor, editor persName, sponsor {
 }
 
 msIdentifier {
-    background-color: #fff1f1;
+    visibility: hidden;
+    
+/*    background-color: #fff1f1;
     -oxy-editable: false;
     content: oxy_label(text, "Manuscript Identification", styles, "font-size: large");
     
     padding-top: 10px;
     padding-left: 5px;
     
-/*    border-bottom: solid 2px #ffd8d8;*/
-/*    border-left: solid 2px #ffd8d8;*/
-    font-size: medium;
+/\*    border-bottom: solid 2px #ffd8d8;*\/
+/\*    border-left: solid 2px #ffd8d8;*\/
+    font-size: medium;*/
 }
 
 settlement {
@@ -181,7 +183,7 @@ content:
 
 p {
     display: inline;
-    padding: 8px;
+    padding: 4px;
 }
 
 
