@@ -6,13 +6,15 @@
     
     
     <xsl:template match="listPlace">
-        <xsl:for-each select="place">
+        <listPlace>
+            <xsl:for-each select="place">
             <xsl:sort select="placeName"/>
             <place>
                 <placeName><xsl:value-of select="placeName"/></placeName>
                 <idno><xsl:value-of select="idno"/></idno>                
             </place>
-        </xsl:for-each>
+            </xsl:for-each>
+        </listPlace>
     </xsl:template>
     
     
