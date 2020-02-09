@@ -573,52 +573,6 @@ lb-n</String>
 									</action>
 									<action>
 										<field name="id">
-											<String>persname</String>
-										</field>
-										<field name="name">
-											<String>persname</String>
-										</field>
-										<field name="description">
-											<String>Creates a new persName</String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor-or-self::p | ancestor-or-self::opener | ancestor-or-self::closer | ancestor-or-self::postscript</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;persName xmlns="http://www.tei-c.org/ns/1.0" />${caret}</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
-									<action>
-										<field name="id">
 											<String>p</String>
 										</field>
 										<field name="name">
@@ -1224,6 +1178,76 @@ reg-ort-python</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>persname</String>
+										</field>
+										<field name="name">
+											<String>Person Name</String>
+										</field>
+										<field name="description">
+											<String>fügt persName mit Register hinzu</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>URL</String>
+																<String>${registersu}/register_person.xml</String>
+															</entry>
+															<entry>
+																<String>element</String>
+																<String>&lt;persName xmlns='http://www.tei-c.org/ns/1.0' ref='$ITEMS' /></String>
+															</entry>
+															<entry>
+																<String>item rendering</String>
+																<String>$XPATH{/persName}</String>
+															</entry>
+															<entry>
+																<String>item separator</String>
+																<String> </String>
+															</entry>
+															<entry>
+																<String>item variable</String>
+																<String>$XPATH{/idno}</String>
+															</entry>
+															<entry>
+																<String>namespaces</String>
+																<String>tei:http://www.tei-c.org/ns/1.0</String>
+															</entry>
+															<entry>
+																<String>node</String>
+																<String>//person</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -1305,6 +1329,11 @@ reg-ort-python</String>
 												</field>
 												<field name="toolbarEntriesDescriptorList">
 													<toolbarEntry-array>
+														<toolbarItem>
+															<field name="actionID">
+																<String>persname</String>
+															</field>
+														</toolbarItem>
 														<toolbarItem>
 															<field name="actionID">
 																<String>placename</String>
