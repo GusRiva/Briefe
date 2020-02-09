@@ -524,7 +524,7 @@
                                     <String>lb</String>
                                 </field>
                                 <field name="breakPolicy">
-                                    <Integer>1</Integer>
+                                    <Integer>0</Integer>
                                 </field>
                             </breakLineElement>
                         </breakLineElement-array>
@@ -542,20 +542,20 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
-                        <String>editor.format.preserve.not.normalize.attribute.values</String>
-                        <Boolean>false</Boolean>
-                    </entry>
-                    <entry>
                         <String>editor.format.preserve.text.as.it.is</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.line.width</String>
+                        <Integer>1000</Integer>
                     </entry>
                     <entry>
                         <String>editor.textantialising</String>
                         <textAntialiasPO>
                             <field name="jvmVersions">
                                 <String-array>
-                                    <String>1.8</String>
                                     <String>11</String>
+                                    <String>1.8</String>
                                 </String-array>
                             </field>
                             <field name="aaValues">
@@ -588,6 +588,10 @@
                     </entry>
                     <entry>
                         <String>key.editor.document.type.custom.locations.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.format.option.pane.group</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
