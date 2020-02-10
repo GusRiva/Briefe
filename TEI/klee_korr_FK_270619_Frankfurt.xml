@@ -41,34 +41,11 @@
         </surface>
     </facsimile>
     <text ana="hc:CompleteExpression hc:LetterCard">
-        <body> <pb n="1"/> <cb n="a"/> <opener><salute>
-            <lb n="1"/>Liebe <rs ref="pers:gnd-133496805 pers:gnd-118562827">Eltern</rs>!</salute></opener> <p part="N">
-            <lb n="2"/>Die Musikausstellung in <placeName ref="#gnd:2563 ">Frankfurt</placeName><note ana="hc:Comment" anchored="true">Internationale Ausstellung in Frankfurt am Main 1927, vgl. Bericht in <ref target="https://digi.ub.uni-heidelberg.de/diglit/neue_frankfurt1926_1927/0184">„<title>Das neue Frankfurt: internationale Monatsschrift für die Probleme kultureller Neugestaltung, 1.1926/​1927</title>“</ref></note> ist wirklich 
-            <lb n="3"/>sehenswert. Eine solche Fülle von Paris und Mokau 
-            <lb n="4"/>Das schönste ist die <title>Zauberflötenpartitur</title> original. 
-            <lb n="5"/>Jedes Land hat seine Abteilung und Stärken 
-            <lb n="6"/>Herrliche <placeName key="gnd:2563">Südseeplatten</placeName> Man kann das alles 
-            <lb n="7"/>kaum beschreiben, so schön ist das. <placeName ref="pers:4044660-8">Paris</placeName>
-            <lb n="8"/>All die alten und modernsten <term>Komponisten</term>. 
-            <lb n="9"/>Dann alles Völkerkundliche, Ich finde das 
-            <lb n="10"/>alles viel stärker und ausgesprochener als 
-            <lb n="11"/>die Magdeburger Ausstellung. <pb n="2"/> <cb n="a" facs="#klee_korr_FK_270619_Frankfurt_2-a"/>
-            <lb n="12"/>Am Dienstag fahre ich 
-            <lb n="13"/>nach Strassburg. 
-            <lb n="14"/>Morgen höre ich 
-            <lb n="15"/>in Wiesbaden <title ref="music:gnd-300122330">Manon 
-            <lb n="16"/>Lescaut</title>. Vielleicht 
-            <lb n="17"/>heute die Götterdämmerung 
-            <lb n="18"/>hier.</p>
-            <lb n="19"/> <closer><salute>Herzlichst Euch Beiden</salute>
-            <lb n="20"/><signed>Felix</signed>.</closer> <milestone ana="hc:ZoneBeginning" n="Postmark" facs="#klee_korr_FK_270619_Frankfurt_2-Postmark"/>
-            <lb n="21"/>Frankfurt <date instant="false">19. Juni 1927</date> <milestone ana="hc:ZoneBeginning" n="Address" facs="#klee_korr_FK_270619_Frankfurt_2-Address"/>
-            <lb n="22"/>An <address>
+        <body> <pb n="1"/> <cb n="a"/> <opener><salute> <lb n="1"/>Liebe <rs ref="pers:gnd-133496805 pers:gnd-118562827">Eltern</rs>!</salute></opener> <p part="N"> <lb n="2"/>Die Musikausstellung in <placeName ref="#gnd:2563 ">Frankfurt</placeName><note ana="hc:Comment" anchored="true">Internationale Ausstellung in Frankfurt am Main 1927, vgl. Bericht in <ref target="https://digi.ub.uni-heidelberg.de/diglit/neue_frankfurt1926_1927/0184">„<title>Das neue Frankfurt: internationale Monatsschrift für die Probleme kultureller Neugestaltung, 1.1926/​1927</title>“</ref></note> ist wirklich <lb n="3"/>sehenswert. Eine solche Fülle von Paris und Mokau <lb n="4"/>Das schönste ist die <title>Zauberflötenpartitur</title> original. <lb n="5"/>Jedes Land hat seine Abteilung und Stärken <lb n="6"/>Herrliche <placeName key="gnd:2563">Südseeplatten</placeName> Man kann das alles <lb n="7"/>kaum beschreiben, so schön ist das. <placeName ref="pers:4044660-8">Paris</placeName> <lb n="8"
+            />All die alten und modernsten <term>Komponisten</term>. <lb n="9"/>Dann alles Völkerkundliche, Ich finde das <lb n="10"/>alles viel stärker und ausgesprochener als <lb n="11"/>die Magdeburger Ausstellung. <pb n="2"/> <cb n="a" facs="#klee_korr_FK_270619_Frankfurt_2-a"/> <lb n="12"/>Am Dienstag fahre ich <lb n="13"/>nach Strassburg. <lb n="14"/>Morgen höre ich <lb n="15"/>in Wiesbaden <title ref="music:gnd-300122330">Manon <lb n="16"/>Lescaut</title>. Vielleicht <lb n="17"/>heute die Götterdämmerung <lb n="18"/>hier.</p> <cb n="b"/><lb n="19"/> <closer><salute>Herzlichst Euch Beiden</salute> <lb n="20"/><signed>Felix</signed>.</closer> <milestone ana="hc:ZoneBeginning" n="Postmark" facs="#klee_korr_FK_270619_Frankfurt_2-Postmark"/> <lb n="21"/>Frankfurt <date instant="false">19. Juni 1927</date> <milestone ana="hc:ZoneBeginning" n="Address" facs="#klee_korr_FK_270619_Frankfurt_2-Address"/> <lb n="22"/>An <address>
             <addrLine>Lily und Paul Klee</addrLine>
-            <addrLine>
-                <lb n="23"/>Hauptstraße 1A</addrLine>
-            <addrLine>
-                <lb n="24"/>Dessau</addrLine>
+            <addrLine> <lb n="23"/>Hauptstraße 1A</addrLine>
+            <addrLine> <lb n="24"/>Dessau</addrLine>
             </address> </body>
     </text>
 </TEI>

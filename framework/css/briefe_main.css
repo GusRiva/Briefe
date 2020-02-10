@@ -194,7 +194,7 @@ placeName {
 
 
 pb {
-    -oxy-append-content: attr(n);
+    -oxy-append-content: "\A"attr(n);
     font-size: large;
     display: inline-block;
     margin-left: 130px;
@@ -203,16 +203,21 @@ pb {
 cb {
     -oxy-append-content:  attr(n);
     font-size: large;
-    display: inline-block;
+    display: inline;
 }
 
 cb[n~="b"]{
-    -oxy-prepend-content: oxy_xpath("preceding::pb[1]/@n");
+    -oxy-prepend-content: "\A"oxy_xpath("preceding::pb[1]/@n");
     margin-left: 130px;
 }
 
 cb[n~="c"]{
-    -oxy-prepend-content: oxy_xpath("preceding::pb[1]/@n");
+    -oxy-prepend-content: "\A"oxy_xpath("preceding::pb[1]/@n");
+    margin-left: 130px;
+}
+
+cb[n~="d"]{
+    -oxy-prepend-content: "\A"oxy_xpath("preceding::pb[1]/@n");
     margin-left: 130px;
 }
 
