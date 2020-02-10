@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="21.1" xml:space="preserve">
+<serialized version="21.0" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -156,7 +156,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;opener>&lt;/opener></String>
+																<String>&lt;opener xmlns="http://www.tei-c.org/ns/1.0">&lt;/opener></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -196,7 +196,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>ancestor-or-self::p | ancestor-or-self::opener | ancestor-or-self::closer</String>
+														<String>ancestor-or-self::p | ancestor-or-self::opener | ancestor-or-self::closer | ancestor-or-self::body</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -1072,7 +1072,7 @@ reg-ort-python</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;note ana="${ask( 'Art:', combobox,( 'hc:Comment':'Kommentar'; 'hc:Footnote':'Fußnoten'; 'hc:Gloss':'Glosse'; 'hc:TextCriticalNote':'textkritische Anmerkung'; 'hc:TranscriptionNote':'Anmerkung zur Transkription' ) )}">&lt;/note></String>
+																<String>&lt;note xmlns="http://www.tei-c.org/ns/1.0" ana="${ask( 'Art:', combobox,( 'hc:Comment':'Kommentar'; 'hc:Footnote':'Fußnoten'; 'hc:Gloss':'Glosse'; 'hc:TextCriticalNote':'textkritische Anmerkung'; 'hc:TranscriptionNote':'Anmerkung zur Transkription' ) )}">&lt;/note></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1118,7 +1118,7 @@ reg-ort-python</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;milestone ana="${ask( '', combobox, ('hc:ZoneBeginning':'Anfang der Zone'; 'hc:ZoneShift': 'Zone Wechseln' ) )}">&lt;/milestone></String>
+																<String>&lt;milestone xmlns="http://www.tei-c.org/ns/1.0" ana="${ask( '', combobox, ('hc:ZoneBeginning':'Zone Beginning'; 'hc:ZoneShift': 'Zone Shift' ) )}">&lt;/milestone></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1240,6 +1240,52 @@ reg-ort-python</String>
 													</field>
 													<field name="operationID">
 														<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>closer</String>
+										</field>
+										<field name="name">
+											<String>closer</String>
+										</field>
+										<field name="description">
+											<String>Adds an closer tag</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;closer xmlns="http://www.tei-c.org/ns/1.0">&lt;/closer></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -1397,15 +1443,9 @@ reg-ort-python</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>p</String>
+																<String>opener</String>
 															</field>
 														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>note</String>
-															</field>
-														</toolbarItem>
-														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
 																<String>head</String>
@@ -1416,12 +1456,22 @@ reg-ort-python</String>
 																<String>epigraph</String>
 															</field>
 														</toolbarItem>
-														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
-																<String>opener</String>
+																<String>p</String>
 															</field>
 														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>note</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>closer</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
 																<String>dateline</String>
@@ -1596,6 +1646,9 @@ reg-ort-python</String>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
+								<field name="outputFile">
+									<null/>
+								</field>
 								<field name="outputResource">
 									<String>${currentFileURL}</String>
 								</field>
@@ -1678,6 +1731,9 @@ reg-ort-python</String>
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
+								</field>
+								<field name="outputFile">
+									<null/>
 								</field>
 								<field name="outputResource">
 									<String>${currentFileURL}</String>

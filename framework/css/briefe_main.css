@@ -161,7 +161,7 @@ text {
      oxy_checkbox(
             edit, "@ana",
             values, "hc:CompleteExpression, hc:Letter, hc:Postcard, hc:PicturedPostcard, hc:LetterCard,hc:Telegram,hc:Poem, hc:Appendix,hc:Envelope",
-            labels, "Volltext, Brieftext, Postkarte, Ansichtskarte, Kartenbrief,Telegramm,Gedicht, Anhänge, Briefumschlag"
+            labels, "Complete Expression, Brieftext, Postkarte, Ansichtskarte, Kartenbrief,Telegramm,Gedicht, Anhänge, Briefumschlag"
             fontInherit, true,
             columns, 60) ;
       -oxy-editable: true;
