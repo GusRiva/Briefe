@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.1">
+<project version="21.0">
     <meta>
         <filters directoryPatterns="" filePatterns="\QKlee.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="21.1" xml:space="preserve">
+            <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>additional.frameworks.directories</String>
@@ -514,7 +514,7 @@
                     </entry>
                     <entry>
                         <String>editor.font</String>
-                        <String>Monospaced,0,16</String>
+                        <String>Arial,0,16</String>
                     </entry>
                     <entry>
                         <String>editor.format.break.line.elements</String>
@@ -554,8 +554,8 @@
                         <textAntialiasPO>
                             <field name="jvmVersions">
                                 <String-array>
-                                    <String>11</String>
                                     <String>1.8</String>
+                                    <String>11</String>
                                 </String-array>
                             </field>
                             <field name="aaValues">
@@ -568,11 +568,15 @@
                     </entry>
                     <entry>
                         <String>font.for.gui</String>
-                        <String>Monospaced,0,12</String>
+                        <String>Arial,0,14</String>
+                    </entry>
+                    <entry>
+                        <String>font.for.schema</String>
+                        <String>Arial,0,14</String>
                     </entry>
                     <entry>
                         <String>font.for.text</String>
-                        <String>Monospaced,0,12</String>
+                        <String>Arial,0,14</String>
                     </entry>
                     <entry>
                         <String>key.author.caret.navigation.option.pane</String>
@@ -604,7 +608,7 @@
                     </entry>
                     <entry>
                         <String>ui.view.titles.font</String>
-                        <String>Monospaced,0,16</String>
+                        <String>Arial,0,16</String>
                     </entry>
                     <entry>
                         <String>user.defined.editor.variables</String>
