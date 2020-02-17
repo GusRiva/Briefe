@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <listPerson>
     <person>
         <persName>Barolo</persName>
@@ -16,4 +15,4 @@
         <persName>Jacobus, de Voragine</persName>
         <idno>118556401</idno>
     </person>
-</listPerson>
+<person><persName>Jamil, Nusrat</persName><idno>121619338</idno></person></listPerson>

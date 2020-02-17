@@ -4,21 +4,17 @@ import xml.etree.ElementTree as ET
 import os 
 import webbrowser
 
-
-
 dir_path = os.path.dirname(os.path.realpath(__file__))
 registerFile = dir_path + '/../../register/register_person.xml'
 
 def sucheGND(searchTerm, v):
     oldRadios = radioFrame.winfo_children()
-#    oldGndLinks = gndLinksCol.winfo_children()
     for olr in oldRadios:
         olr.destroy()
-#    for oll in oldGndLinks:
-#    	olr.destroy()
+
     response = requests.get(
         "https://lobid.org/gnd/search?q=" + searchTerm + "&filter=type:Person&format=json")
-    
+
     searchResult = []
 
     for item in response.json()['member']:
@@ -28,13 +24,11 @@ def sucheGND(searchTerm, v):
         tk.Radiobutton(radioFrame,
                        text= tup[0],
                        height = 2,
-                       # padx=20,
                        variable=v,
                        # command= StoreChoice,
                        value= tup[0] + "§" + tup[1]).grid(row = 1 + val, column = 1, sticky = tk.W)
         lbl = tk.Button(radioFrame, text = tup[1], padx = 2, borderwidth = 0, command = lambda j = tup[1]: openURL(j) )
         lbl.grid(row = 1 + val, column = 2, sticky = tk.W)
-        
 
     v.set(searchResult[0][0] +"§" + searchResult[0][1]) # select the first radio
     buttonAdd.config(state="normal")
@@ -101,9 +95,6 @@ buttonAdd.grid(row=0, column=5, padx=10, sticky=tk.W)
 
 radioFrame = tk.Frame(master)
 radioFrame.grid(row=1, column=2, sticky=tk.W)
-
-#gndLinksCol = tk.Frame(master)
-#gndLinksCol.grid(row=1, column=3, sticky=tk.W)
 
 
 

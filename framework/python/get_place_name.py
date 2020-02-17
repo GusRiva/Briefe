@@ -1,7 +1,8 @@
 import requests
 import tkinter as tk
 import xml.etree.ElementTree as ET
-import os 
+import os
+import webbrowser
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 registerFile = dir_path + '/../../register/register_place.xml'
@@ -10,26 +11,26 @@ def sucheGND(searchTerm, v):
     oldRadios = radioFrame.winfo_children()
     for olr in oldRadios:
         olr.destroy()
-    print(searchTerm)
+
     response = requests.get(
         "https://lobid.org/gnd/search?q=" + searchTerm + "&filter=type:TerritorialCorporateBodyOrAdministrativeUnit&format=json")
-    print(response.status_code)
+
     searchResult = []
 
     for item in response.json()['member']:
         searchResult.append( (item['preferredName'], item['gndIdentifier']) )
 
-    print(searchResult)
-
     for val, tup in enumerate(searchResult):
         tk.Radiobutton(radioFrame,
                        text= tup[0],
-                       # padx=20,
+                       height = 2,
                        variable=v,
                        # command= StoreChoice,
-                       value= tup[0] + "§" + tup[1]).grid(row=1 + val, column=1, sticky=tk.W)
+                       value= tup[0] + "§" + tup[1]).grid(row = 1 + val, column = 1, sticky = tk.W)
+        lbl = tk.Button(radioFrame, text = tup[1], padx = 2, borderwidth = 0, command = lambda j = tup[1]: openURL(j) )
+        lbl.grid(row = 1 + val, column = 2, sticky = tk.W)
 
-    v.set(searchResult[0][0] +"§" + searchResult[0][1])
+    v.set(searchResult[0][0] +"§" + searchResult[0][1]) # select the first radio
     buttonAdd.config(state="normal")
 
 def updateRegister(selName, selGND, register):
@@ -60,6 +61,9 @@ def addEntry():
     updateRegister(selectedName,selectedGND, registerFile)
     master.quit()
 
+def openURL(idno):
+	webbrowser.open_new("http://d-nb.info/gnd/" + idno)
+
 master = tk.Tk()
 v = tk.StringVar()
 master.geometry("900x500") #Width x Height
@@ -74,7 +78,7 @@ e1.focus_set()
 
 e1.grid(row=0, column=2,
         columnspan=2,
-        pady= 4,
+#        pady= 4,
         sticky=tk.W)
 
 

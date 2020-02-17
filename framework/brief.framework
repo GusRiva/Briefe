@@ -1123,7 +1123,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>"${frameworkDir}/python/venv/bin/python" "${frameworkDir}/python/get_place_name.py"</String>
+																<String>python "${frameworkDir}/python/get_place_name.py"</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
@@ -1707,7 +1707,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>"${frameworkDir}/python/venv/bin/python" "${frameworkDir}/python/get_pers_name.py"</String>
+																<String>python "${frameworkDir}/python/get_pers_name.py"</String>
 															</entry>
 															<entry>
 																<String>showConsole</String>
