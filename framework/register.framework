@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="21.1" xml:space="preserve">
+<serialized version="21.0" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -225,14 +225,13 @@
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
-																<String>actionIDs</String>
-																<String>newEntry2-sort-place
-newEntry2-sort-person</String>
+																<String>scenarioNames</String>
+																<String>sort</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.ExecuteMultipleActionsOperation</String>
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -342,98 +341,6 @@ newEntry1-tags-person</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-									<action>
-										<field name="id">
-											<String>newEntry2-sort-place</String>
-										</field>
-										<field name="name">
-											<String>Sort</String>
-										</field>
-										<field name="description">
-											<String></String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor-or-self::listPlace</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>scenarioNames</String>
-																<String>sort-place</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
-									<action>
-										<field name="id">
-											<String>newEntry2-sort-person</String>
-										</field>
-										<field name="name">
-											<String>Sort</String>
-										</field>
-										<field name="description">
-											<String></String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String></String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>scenarioNames</String>
-																<String>sort-person</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -493,6 +400,21 @@ newEntry1-tags-person</String>
 											<toolbarItem>
 												<field name="actionID">
 													<String>newEntry1-tags</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>newEntry2-sort</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>comment</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>unwrap</String>
 												</field>
 											</toolbarItem>
 										</toolbarEntry-array>
@@ -587,7 +509,7 @@ newEntry1-tags-person</String>
 									<null/>
 								</field>
 								<field name="name">
-									<String>sort-place</String>
+									<String>sort</String>
 								</field>
 								<field name="baseURL">
 									<String></String>
@@ -624,6 +546,9 @@ newEntry1-tags-person</String>
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
+								</field>
+								<field name="outputFile">
+									<File>${currentFileURL}</File>
 								</field>
 								<field name="outputResource">
 									<String>${currentFileURL}</String>
@@ -675,7 +600,7 @@ newEntry1-tags-person</String>
 					</field>
 					<field name="defaultTransformationScenarios">
 						<list>
-							<String>sort-place</String>
+							<String>sort</String>
 						</list>
 					</field>
 					<field name="extensionsBundleClassName">

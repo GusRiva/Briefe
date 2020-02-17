@@ -563,7 +563,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>URL</String>
-																<String>${registers}/register_place.xml</String>
+																<String>${registersu}register_place.xml</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1661,7 +1661,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>URL</String>
-																<String>${registers}/register_person.xml</String>
+																<String>${registersu}register_person.xml</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>

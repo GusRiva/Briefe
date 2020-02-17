@@ -17,6 +17,18 @@
         </listPlace>
     </xsl:template>
     
+    <xsl:template match="listPerson">
+        <listPlace>
+            <xsl:for-each select="person">
+                <xsl:sort select="persName"/>
+                <place>
+                    <placeName><xsl:value-of select="persName"/></placeName>
+                    <idno><xsl:value-of select="idno"/></idno>                
+                </place>
+            </xsl:for-each>
+        </listPlace>
+    </xsl:template>
+    
     
     
     

@@ -514,7 +514,7 @@
                     </entry>
                     <entry>
                         <String>editor.font</String>
-                        <String>Arial,0,16</String>
+                        <String>Times New Roman,0,18</String>
                     </entry>
                     <entry>
                         <String>editor.format.break.line.elements</String>
@@ -524,7 +524,7 @@
                                     <String>lb</String>
                                 </field>
                                 <field name="breakPolicy">
-                                    <Integer>0</Integer>
+                                    <Integer>1</Integer>
                                 </field>
                             </breakLineElement>
                         </breakLineElement-array>

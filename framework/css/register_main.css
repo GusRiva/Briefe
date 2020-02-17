@@ -2,13 +2,36 @@
 /*    display: block;*/
      -oxy-display-tags: none;
     font-size:1.0em;
+    margin: 10px;
 }
 
 place {
     display: block;
+     -oxy-display-tags: default;
+}
+
+
+place:before {
+    content: " Place: ";
+    color: #191970;
 }
 
 placeName {
+    display: inline;
+}
+
+person {
+    display: block;
+    -oxy-display-tags: default;
+}
+
+
+person:before {
+    content: " Person: ";
+    color: #191970;
+}
+
+persName {
     display: inline;
 }
 
