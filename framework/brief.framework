@@ -217,7 +217,7 @@
 															</entry>
 															<entry>
 																<String>insertLocation</String>
-																<String>ancestor-or-self::l</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>insertPosition</String>
@@ -2289,13 +2289,13 @@ lb-n</String>
 									<String></String>
 								</field>
 								<field name="attributeLocalName">
-									<String>*</String>
+									<String>ana</String>
 								</field>
 								<field name="attributeNamespace">
 									<String>*</String>
 								</field>
 								<field name="attributeValue">
-									<String>*</String>
+									<String>klee_fw</String>
 								</field>
 							</documentTypeRule>
 						</documentTypeRule-array>
