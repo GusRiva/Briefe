@@ -16,5 +16,27 @@
         <lb xmlns="http://www.tei-c.org/ns/1.0" ><xsl:attribute name="n"><xsl:number count="tei:lb" level="any"></xsl:number></xsl:attribute></lb>
     </xsl:template>
     
+    <xsl:template match="tei:pb">
+        <xsl:variable name="simple_count">
+            <xsl:number count="tei:pb" level="any"/>
+        </xsl:variable>
+        <pb xmlns="http://www.tei-c.org/ns/1.0" >
+            <xsl:attribute name="n">
+                <xsl:choose>
+                    <xsl:when test="$simple_count mod 2 = 1">
+                        <xsl:value-of select=" format-number( ( $simple_count + 0.9 ) div 2 , '##')"/>
+                        <xsl:text>r</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select=" format-number( ( $simple_count + 0.9 ) div 2 , '##')"/>
+                        <xsl:text>v</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
+                
+            </xsl:attribute>
+        </pb>
+    </xsl:template>
+    
     
 </xsl:stylesheet>

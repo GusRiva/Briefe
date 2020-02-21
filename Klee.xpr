@@ -546,6 +546,12 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>editor.format.strip.spaces.elements</String>
+                        <String-array>
+                            <String>author</String>
+                        </String-array>
+                    </entry>
+                    <entry>
                         <String>editor.line.width</String>
                         <Integer>1000</Integer>
                     </entry>
@@ -587,6 +593,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.custom.validation.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -599,11 +609,11 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
-                        <String>key.editor.format.xml.option.pane</String>
+                        <String>key.fonts.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
-                        <String>key.fonts.option.pane</String>
+                        <String>key.relax.ng.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
@@ -636,6 +646,10 @@
                                 </field>
                             </userEditorVariable>
                         </userEditorVariable-array>
+                    </entry>
+                    <entry>
+                        <String>validation.relax-ng.defaults</String>
+                        <Boolean>false</Boolean>
                     </entry>
                 </serializableOrderedMap>
             </serialized>

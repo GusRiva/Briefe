@@ -370,13 +370,13 @@
 									</action>
 									<action>
 										<field name="id">
-											<String>add-lb</String>
+											<String>add-lb-pb</String>
 										</field>
 										<field name="name">
-											<String>Zeilen Hinzufügen</String>
+											<String>Zeilen- und Seitenumbruch</String>
 										</field>
 										<field name="description">
-											<String>Inserts lb in a plain text with \n</String>
+											<String>Inserts lb and pb in a plain text with \n</String>
 										</field>
 										<field name="largeIconPath">
 											<String></String>
@@ -1731,7 +1731,7 @@ lb-n</String>
 									</action>
 									<action>
 										<field name="id">
-											<String>hyphen-doble</String>
+											<String>double-hyphen1</String>
 										</field>
 										<field name="name">
 											<String>Double Hyphen</String>
@@ -1761,7 +1761,7 @@ lb-n</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x2e17;&lt;/metamark></String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x2e40;&lt;/metamark></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1777,10 +1777,10 @@ lb-n</String>
 									</action>
 									<action>
 										<field name="id">
-											<String>Ampersand</String>
+											<String>sz-ampersand</String>
 										</field>
 										<field name="name">
-											<String>Ampersand</String>
+											<String>&amp; - Et-Zeichen</String>
 										</field>
 										<field name="description">
 											<String>Inserts ampersand</String>
@@ -1913,6 +1913,245 @@ lb-n</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>double-hyphen-meta</String>
+										</field>
+										<field name="name">
+											<String>= - Double Hyphen</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>actionIDs</String>
+																<String>double-hyphen1
+double-hyphen2</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteMultipleActionsOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>double-hyphen2</String>
+										</field>
+										<field name="name">
+											<String>Double Hyphen2</String>
+										</field>
+										<field name="description">
+											<String>Inserts metamark hyphen</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>./following-sibling::lb</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>break</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>no</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>sz-pfenning</String>
+										</field>
+										<field name="name">
+											<String>₰ - Pfennig</String>
+										</field>
+										<field name="description">
+											<String>Inserts Ofenning</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x20B0;&lt;/metamark></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>sz-pfund</String>
+										</field>
+										<field name="name">
+											<String>℔ - Gewichtpfund</String>
+										</field>
+										<field name="description">
+											<String>Inserts Gewichtspfund</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x2114;&lt;/metamark></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>sz-prozent</String>
+										</field>
+										<field name="name">
+											<String>% - Prozentzeichen</String>
+										</field>
+										<field name="description">
+											<String>Inserts Prozentzeichen</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x0025;&lt;/metamark></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -1986,7 +2225,7 @@ lb-n</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>add-lb</String>
+																<String>add-lb-pb</String>
 															</field>
 														</toolbarItem>
 														<toolbarItem>
@@ -2025,11 +2264,6 @@ lb-n</String>
 														<toolbarItem>
 															<field name="actionID">
 																<String>opener</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>head</String>
 															</field>
 														</toolbarItem>
 														<toolbarItem>
@@ -2183,7 +2417,7 @@ lb-n</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>Ampersand</String>
+																<String>sz-ampersand</String>
 															</field>
 														</toolbarItem>
 														<toolbarItem>
@@ -2199,7 +2433,7 @@ lb-n</String>
 														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
-																<String>hyphen-doble</String>
+																<String>double-hyphen-meta</String>
 															</field>
 														</toolbarItem>
 													</toolbarEntry-array>
@@ -2280,7 +2514,7 @@ lb-n</String>
 									<String>*</String>
 								</field>
 								<field name="fileName">
-									<String>klee*</String>
+									<String>*</String>
 								</field>
 								<field name="publicID">
 									<String>*</String>
@@ -2477,10 +2711,56 @@ lb-n</String>
 						</scenario-array>
 					</field>
 					<field name="validationScenarios">
-						<validationScenario-array/>
+						<validationScenario-array>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/rng</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${framework}/schema/tei_hes.rng</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<null/>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>tei_hes</String>
+								</field>
+							</validationScenario>
+						</validationScenario-array>
 					</field>
 					<field name="defaultValidationScenarios">
-						<null/>
+						<list>
+							<String>tei_hes</String>
+						</list>
 					</field>
 					<field name="defaultTransformationScenarios">
 						<null/>
