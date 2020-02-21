@@ -1,0 +1,12 @@
+expan {
+    display: inline;
+    font-size: small;
+}
+
+expan:before {
+    content: "["
+}
+
+expan:after {
+    content: "]"
+}

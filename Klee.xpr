@@ -538,6 +538,13 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>editor.format.mixed.content.elements</String>
+                        <String-array>
+                            <String>choice</String>
+                            <String>hi</String>
+                        </String-array>
+                    </entry>
+                    <entry>
                         <String>editor.format.preserve.empty.lines</String>
                         <Boolean>false</Boolean>
                     </entry>
@@ -606,6 +613,10 @@
                     </entry>
                     <entry>
                         <String>key.editor.format.option.pane.group</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.format.xml.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>

@@ -1,4 +1,5 @@
 @namespace oxy url('http://www.oxygenxml.com/extensions/author');
+@namespace hei "https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS";
 
 /*@font-face {
   font-family: "Junicode";
@@ -222,6 +223,18 @@ ref {
     display: inline;
 }
 
+*[hei|color~="Red"]{
+    color: red;
+}
+
+*[hei|color~="Blue"]{
+    color: blue;
+}
+
+*[hei|color~="Gold"]{
+    color: gold;
+}
+
 note {
     display: inline;
     -oxy-prepend-content: "*";
@@ -287,6 +300,14 @@ del {
     text-decoration: line-through;
     text-decoration-style: double;
     -oxy-display-tags: none;
+}
+
+expan {
+    display: none;
+}
+
+abbr {
+    font-style: oblique;
 }
 
 
