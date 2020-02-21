@@ -39,17 +39,6 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css/place.css</String>
-										</field>
-										<field name="title">
-											<String>Place</String>
-										</field>
-										<field name="alternate">
-											<Boolean>true</Boolean>
-										</field>
-									</cssFile>
-									<cssFile>
-										<field name="href">
 											<String>${framework}/css/letter-structure.css</String>
 										</field>
 										<field name="title">
@@ -61,10 +50,10 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css/org.css</String>
+											<String>${framework}/css/title.css</String>
 										</field>
 										<field name="title">
-											<String>Organisation Name</String>
+											<String>title</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -75,7 +64,29 @@
 											<String>${framework}/css/person.css</String>
 										</field>
 										<field name="title">
-											<String>Persons</String>
+											<String>persName</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/place.css</String>
+										</field>
+										<field name="title">
+											<String>placeName</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/org.css</String>
+										</field>
+										<field name="title">
+											<String>orgName</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -86,7 +97,7 @@
 											<String>${framework}/css/rs.css</String>
 										</field>
 										<field name="title">
-											<String>Referencing String</String>
+											<String>rs (Referencing String)</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -97,18 +108,7 @@
 											<String>${framework}/css/term.css</String>
 										</field>
 										<field name="title">
-											<String>Term</String>
-										</field>
-										<field name="alternate">
-											<Boolean>true</Boolean>
-										</field>
-									</cssFile>
-									<cssFile>
-										<field name="href">
-											<String>${framework}/css/title.css</String>
-										</field>
-										<field name="title">
-											<String>Titeln</String>
+											<String>term</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -2152,6 +2152,185 @@ double-hyphen2</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>postscript</String>
+										</field>
+										<field name="name">
+											<String>Postscript</String>
+										</field>
+										<field name="description">
+											<String>Adds a postscript tag</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;postscript xmlns="http://www.tei-c.org/ns/1.0">&lt;/postscript></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>metamark</String>
+										</field>
+										<field name="name">
+											<String>metamark</String>
+										</field>
+										<field name="description">
+											<String>Adds a metamark</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0">&lt;/metamark></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>gap</String>
+										</field>
+										<field name="name">
+											<String>gap</String>
+										</field>
+										<field name="description">
+											<String>Creates a new gap</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::text</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;gap xmlns="http://www.tei-c.org/ns/1.0" hei:placeRef="${ask('unit:', combobox, ('???' : '????' ; '????' : '????'))}">${caret}&lt;/gap></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>unwrap-del</String>
+										</field>
+										<field name="name">
+											<String>unwrap</String>
+										</field>
+										<field name="description">
+											<String>Delete the current tag, but keep all the children and content</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/icons/icon-remove-tag-48.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<String>meta shift 0</String>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.UnwrapTagsOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -2286,6 +2465,11 @@ double-hyphen2</String>
 																<String>closer</String>
 															</field>
 														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>postscript</String>
+															</field>
+														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
@@ -2357,6 +2541,16 @@ double-hyphen2</String>
 														<toolbarItem>
 															<field name="actionID">
 																<String>del</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>gap</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>metamark</String>
 															</field>
 														</toolbarItem>
 													</toolbarEntry-array>
