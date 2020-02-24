@@ -581,7 +581,7 @@
                     </entry>
                     <entry>
                         <String>font.for.gui</String>
-                        <String>Arial,0,14</String>
+                        <String>Times New Roman,0,14</String>
                     </entry>
                     <entry>
                         <String>font.for.schema</String>

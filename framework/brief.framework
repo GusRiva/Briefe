@@ -384,7 +384,7 @@
 											<String>abbr</String>
 										</field>
 										<field name="name">
-											<String>abbr</String>
+											<String>Abbreviatur (choice + expan + abbr)</String>
 										</field>
 										<field name="description">
 											<String>Inserts a custom abbreviation</String>
@@ -785,7 +785,7 @@ lb-n</String>
 											<String>p</String>
 										</field>
 										<field name="name">
-											<String>Paragraph</String>
+											<String>p - Paragraph</String>
 										</field>
 										<field name="description">
 											<String>Creates a new p</String>
@@ -1207,7 +1207,7 @@ lb-n</String>
 											<String>note</String>
 										</field>
 										<field name="name">
-											<String>note</String>
+											<String>note (Fußnote, Ed. Kommentar)</String>
 										</field>
 										<field name="description">
 											<String>Adds note</String>
@@ -1253,7 +1253,7 @@ lb-n</String>
 											<String>milestone</String>
 										</field>
 										<field name="name">
-											<String>Milestone</String>
+											<String>milestone</String>
 										</field>
 										<field name="description">
 											<String></String>
@@ -1599,7 +1599,7 @@ lb-n</String>
 											<String>hi1</String>
 										</field>
 										<field name="name">
-											<String>hi</String>
+											<String>hi (Schriftart)</String>
 										</field>
 										<field name="description">
 											<String>Creates a new hi</String>
@@ -2214,7 +2214,7 @@ double-hyphen2</String>
 											<String>postscript</String>
 										</field>
 										<field name="name">
-											<String>Postscript</String>
+											<String>postscript</String>
 										</field>
 										<field name="description">
 											<String>Adds a postscript tag</String>
@@ -2333,7 +2333,7 @@ double-hyphen2</String>
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;gap xmlns="http://www.tei-c.org/ns/1.0" hei:placeRef="${ask('unit:', combobox, ('???' : '????' ; '????' : '????'))}">${caret}&lt;/gap></String>
+																<String>&lt;gap xmlns="http://www.tei-c.org/ns/1.0" unit="${ask('Unit (Messeinheit):', combobox, ('chars' : 'Schriftzeichen' ; 'cm' : 'cm' ; 'mm' : 'mm' ; 'in' : 'inches' ; 'lines' : 'Zeilen' ))}" extent="${ask('Extent: ', generic)}">${caret}&lt;/gap></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -2666,6 +2666,52 @@ hi2</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>sz-herz</String>
+										</field>
+										<field name="name">
+											<String>♡ - Herz</String>
+										</field>
+										<field name="description">
+											<String>Inserts Herz</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;metamark xmlns="http://www.tei-c.org/ns/1.0" ana="hc:Hyphen">&amp;#x2661;&lt;/metamark></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -2961,17 +3007,39 @@ hi2</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>sz-ampersand</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
 																<String>greaterThan</String>
 															</field>
 														</toolbarItem>
 														<toolbarItem>
 															<field name="actionID">
 																<String>lessThan - Copy</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sz-ampersand</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sz-prozent</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sz-pfenning</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sz-pfund</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sz-herz</String>
 															</field>
 														</toolbarItem>
 														<toolbarSeparator/>
