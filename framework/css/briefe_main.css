@@ -11,6 +11,9 @@ oxy|document{
     background-position:top;
 }
 
+TEI oxy|comment {
+    font-size: small;
+}
 
 
 * {

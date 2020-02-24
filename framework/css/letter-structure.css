@@ -18,6 +18,26 @@ closer:after {
     color: #5C5C8E;
 }
 
+dateline {
+     content: oxy_label(text, "Dateline: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #EE82EE") ;
+}
+
+dateline:after {
+    content: "| dateline";
+    font-size: x-small;
+    color: #EE82EE;
+}
+
+p {
+     content: oxy_label(text, "Paragraph: ", width, 10em, text-align, left, styles, "font-size: small; color: #458B74") ;
+}
+
+p:after {
+     content: "| P";
+    font-size: x-small;
+    color: #458B74;
+}
+
 postscript {
      content: oxy_label(text, "Postscript: ", width, 10em, text-align, left, styles, "font-size: x-small; color: #6E7416") ;
 }

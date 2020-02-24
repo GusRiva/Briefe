@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" ana="klee_fw">
-    <!--der <teiHeader> wird per Skript überschrieben. AUSNAHME: wenn es zwei Absender/Briefe in einem Projekt gibt, dann muss fileDesc/sourceDesc/msDesc/msContents und profileDesc/correspDesc belegt werden. Diese Angaben werden dann nicht überschrieben. -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" ana="klee_fw" xml:id="fds3">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><!--Title: Zur Orientierung kann hier die Titelzeile des Briefes eingetragen werden. Angabe wird später mit DWork Metadaten überschrieben--></title>
+                <title><!--Titel: Zur Orientierung steht hier die Titelzeile des Briefes. Angabe wird später mit DWork Metadaten überschrieben--></title>
             </titleStmt>
             <publicationStmt>
-                <publisher> <orgName>Universitätsbibliothek Heidelberg</orgName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/2002498-8</idno> <ref target="https://www.ub.uni-heidelberg.de">https://www.ub.uni-heidelberg.de</ref> <address>
-                    <street>Plöck 107–109</street>
-                    <postCode>69117</postCode>
-                    <settlement> <placeName>Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </settlement>
-                    <country> <placeName>Deutschland</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4011882-4</idno> </country>
-                    </address> </publisher>
-                <pubPlace> <placeName>Heidelberg</placeName> <idno ana="hc:GND-URI">http://d-nb.info/gnd/4023996-2</idno> </pubPlace>
-                <!--                <date when="2020-01-15"><!-\-TT.MM.JJJJ-\-></date>-->
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</licence>
-                </availability>
+                <p>Publication Information</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -28,9 +18,24 @@
             </sourceDesc>
         </fileDesc>
     </teiHeader>
+    <facsimile>
+        <surface ana="hc:Page" xml:id="!!Projektname_Seitenname!!" n="!!DWork Seitenname!!">
+            <!--belegen mit @ana und dem Wert (meist hc:Page), @xml:id für das spezifische Projekt und @n für die Seitennummerierung (DWork Seitenname)-->
+            <graphic url="URL zum Digitalisat" mimeType="image/*"/>
+            <!--als Wert die URL der Seite eingeben-->
+            <!-- zone: für jeden Inhaltsbereich wird innerhalb von surface ein Element <zone> angelegt. Das Element <zone> wird auch verwendet um Inhaltsbereiche zu gruppieren und so deren Anordnung zu bestimmen -->
+            <zone ana="hc:HorizontalLayout"> <zone ana="hc:MainColumn hc:TextZone" xml:id="!!Projektname_Seitenname-Spaltenangabe!!" n="!!Spaltenangabe!!"/>
+                <!--belegen mit @ana und entsprechendem Wert (meist hc:Column), @xml:id für das spezifische Projekt und @n für die Spaltenangabe (z.B Kleinbuchstaben)--> <zone ana="hc:MarginalZone hc:TextZone" xml:id="!!Projektname_Seitenname-Spaltenangabe!!" n="!!Spaltenangabe!!"/>
+                <!-- am @rendition kann die Platzierung eine Textzone für die Visualiserung angegeben werden; @hei:width für die prozentuale Angabe einer Zone zur Seite ; @rotate für die Angabe der Abweichung Textausrichtung in Grad --> </zone>
+        </surface>
+        <surface ana="hc:Page" xml:id="" n="">
+            <graphic url="URL zum Digitalisat" mimeType="image/*"/>
+            <zone ana="hc:TextZone hc:MarginalZone" xml:id="" n=""/>
+        </surface>
+    </facsimile>
+    <!-- text belegen mit @ana und dem Wert für den Status (meist hc:CompleteExpression) und dem Wert für die Gattung (meist hc:Letter oder hc:Postcard)-->
     <text ana="hc:CompleteExpression hc:Letter">
         <body>
-            
             
             
         </body>
